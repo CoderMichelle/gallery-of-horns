@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+header, footer {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,10 +15,16 @@ img {
   max-width: 300px;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.col {
+  width: 320px;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

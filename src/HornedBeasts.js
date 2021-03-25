@@ -19,11 +19,12 @@ class HornedBeasts extends React.Component {
   }
   render() {
     return (
-      <Container>
+      <Container fluid >
         <Row>
-          <Col>
+          <Col onClick={this.imageClicked}>
             <h2>{this.props.title}</h2>
-            <button onClick={this.imageClicked} ><img src={this.props.image_url} alt={this.props.description} title={this.props.title} />&#9829;</button>
+            <img src={this.props.image_url} alt={this.props.description} title={this.props.title} />
+            <h3>&#9829; {this.state.timesClicked}</h3>
             <p>{this.props.description}</p>
           </Col>
         </Row>
@@ -33,3 +34,5 @@ class HornedBeasts extends React.Component {
   }
 }
 export default HornedBeasts;
+
+{/* <button onClick={this.imageClicked} ><img src={this.props.image_url} alt={this.props.description} title={this.props.title} /></button> */ }
