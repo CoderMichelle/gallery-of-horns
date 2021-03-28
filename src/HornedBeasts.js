@@ -1,5 +1,6 @@
+
 import React from 'react';
-// import  from 'react-bootstrap/Container';
+
 import Card from 'react-bootstrap/Card';
 
 
@@ -12,13 +13,13 @@ class HornedBeasts extends React.Component {
   }
   imageClicked = () => {
     console.log(this.state.timesClicked);
-    this.setState({
-      timesClicked: this.state.timesClicked + 1
-    });
+
+    this.setState({ timesClicked: this.state.timesClicked + 1 });
+    this.props.showModal(this.props.title);
+
   }
   render() {
     return (
-
       <Card style={{ width: '25rem' }} onClick={this.imageClicked}>
         <Card.Img variant="top" src={this.props.image_url} style={{ width: '100%' }} alt={this.props.keyword} />
         <Card.Body>
