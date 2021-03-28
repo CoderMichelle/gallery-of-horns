@@ -6,6 +6,12 @@ Michelle Pannosch
 3-21-21 added README.md, gitignore, eslintrc.json
 
 ### Time Management record
+Number and name of feature: Lab03
+Estimate of time needed to complete: _____
+Start time: 1:15pm
+Finish time: _____
+Actual time needed to complete: _____
+
 Number and name of feature: Lab02
 Estimate of time needed to complete: 2 hrs
 Start time: 8:20
