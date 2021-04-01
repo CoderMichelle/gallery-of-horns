@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 
 class Main extends React.Component {
   handleFilter = (event) => {
-    if (event.target.value === "All") {
+    if (event.target.value === 'All') {
       this.props.handleDropDown(event.target.value);
     } else {
       this.props.handleDropDown(+event.target.value);
