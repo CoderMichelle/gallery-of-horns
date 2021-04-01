@@ -9,8 +9,8 @@ Michelle Pannosch
 3-21-21 added README.md, gitignore, eslintrc.json.
 3-24-21 finalized lab02 for submission.
 3-27-21 Big Shout Out to Kassie Bradshaw and Daniel Dills for the group work together in Remo today!
-3-27-21 Lab03 applied Modal to give image selected closer view. Updated State. Passed function from parent to child. 
-3-31-21 Lab04 added filter using Form, and submitted to Netlify.
+3-27-21 Lab03 applied Modal to give image selected closer view. Updated State. Passed function from parent to child.
+3-31-21 Lab04 added filter using Form, and submitted to Netlify, and a big thanks to TA Vince Masten for his help with netlify.
 
 ## Time Management record
 
