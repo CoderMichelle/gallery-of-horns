@@ -2,8 +2,8 @@ import React from 'react';
 import HornedBeasts from './HornedBeasts.js';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container';
-
+// import Container from 'react-bootstrap/Container';
+import './Main.css';
 class Main extends React.Component {
   handleFilter = (event) => {
     if (event.target.value === 'All') {
@@ -15,11 +15,11 @@ class Main extends React.Component {
   render() {
 
     return (
-      <Container>
+      <>
         <Form>
           <Form.Group controlId="exampleForm.SelectCustomSizeSm">
             <Form.Label>Select the Number of Horns</Form.Label>
-            <Form.Control as="select" size="sm" onChange={this.handleFilter}>
+            <Form.Control as="select" onChange={this.handleFilter}>
               <option>All</option>
               <option>1</option>
               <option>2</option>
@@ -44,7 +44,7 @@ class Main extends React.Component {
           })}
 
         </CardDeck>
-      </Container>
+      </>
     );
 
   }
