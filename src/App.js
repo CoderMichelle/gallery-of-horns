@@ -4,23 +4,23 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import data from './data.json';
-import SelectedBeast from './SelectedBeast';
+import SelectedImgObject from './SelectedBeast';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedBeast: {},
+      selectedImgObject: {},
       displayModal: false,
       beastData: data
     };
   }
 
   showModal = (name) => {
-    const selectedBeast = data.find(beast => beast.title === name);
-    console.log(SelectedBeast);
-    this.setState({ selectedBeast, displayModal: true });
+    const selectedImgObject = data.find(imgObject => imgObject.title === name);
+    console.log(SelectedImgObject);
+    this.setState({ selectedImgObject, displayModal: true });
   }
 
   hideModal = () => {
@@ -45,10 +45,10 @@ class App extends React.Component {
           handleDropDown={this.handleDropDown}
         />
 
-        <SelectedBeast
+        <SelectedImgObject
           displayModal={this.state.displayModal}
           hideModal={this.hideModal}
-          selectedBeast={this.state.selectedBeast}
+          selectedImgObject={this.state.selectedImgObject}
         />
         <Footer />
       </div>

@@ -11,10 +11,10 @@ class SelectedBeast extends React.Component {
           <Modal.Header closeButton />
           <Modal.Body>
             <Card style={{ width: '25rem' }}>
-              <Card.Img src={this.props.selectedBeast.image_url} />
+              <Card.Img src={this.props.selectedImgObject.image_url} />
               <Card.Body>
-                <Card.Title>{this.props.selectedBeast.title}</Card.Title>
-                <Card.Text>{this.props.selectedBeast.description}</Card.Text>
+                <Card.Title>{this.props.selectedImgObject.title}</Card.Title>
+                <Card.Text>{this.props.selectedImgObject.description}</Card.Text>
               </Card.Body>
             </Card>
           </Modal.Body>
