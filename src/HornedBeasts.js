@@ -12,20 +12,23 @@ class HornedBeasts extends React.Component {
     };
   }
   imageClicked = () => {
-    console.log(this.state.timesClicked);
+    // console.log(this.state.timesClicked);
 
     this.setState({ timesClicked: this.state.timesClicked + 1 });
+
+  }
+  openModal = () => {
     this.props.showModal(this.props.title);
 
   }
   render() {
     return (
       <Card style={{ width: '25rem' }} onClick={this.imageClicked}>
-        <Card.Img variant="top" src={this.props.image_url} style={{ width: '100%' }} alt={this.props.keyword} />
+        <Card.Img onClick={this.openModal} variant="top" src={this.props.image_url} style={{ width: '100%' }} alt={this.props.keyword} />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
-          <Card.Text>&#9829; {this.state.timesClicked}</Card.Text>
+          <Card.Text>❤️ {this.state.timesClicked}</Card.Text>
         </Card.Body>
       </Card>
     );
